@@ -19,15 +19,15 @@ import robin_stocks as r
 # Login to your Robinhood account
 username = 'johncena@gmail.com'
 password = '*******'
-login = r.login(username, password)
+# login = r.login(username, password)
 
 
 # Once your logged, check your holdings by running this command
-r.build_holdings()
+# r.build_holdings()
 
 # Fetch historical data
-tech_stocks = ['AAPL', 'MSFT', 'NVDA', 'GOOGL']
-data = yf.download(tech_stocks, start='2024-06-01', end='2024-06-25', interval='15m')
+data = yf.download("GOOGL", start='2024-06-01', end='2024-06-25', interval='15m')
+data.iloc[:,:]
 
 # Making a signal function to detect bearish/bullish patterns in the market 
 # It'll tell us whether we should buy or sell
@@ -61,5 +61,7 @@ signal.append(0)
 for i in range(1,len(data)):
     df = data[i-1:i+1]
     signal.append(stock_signal(df))
-#signal_generator(data)
 data["signal"] = signal
+
+# Prints the signal for Google stock
+print(data.signal.value_counts())
