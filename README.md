@@ -10,5 +10,9 @@ GainLock is an algorithmic trading bot designed to automate trading decisions ba
 - **Risk Management**: Includes built-in risk management protocols to mitigate potential losses.
 - **Logging and Reporting**: Keeps detailed logs of trading activities and performance metrics.
 
-## Documentation links
+## Useful links
 - **Robin-stocks API Library**: https://pypi.org/project/robin-stocks/
+- **Robin-stocks documentation**: https://robin-stocks.readthedocs.io/en/latest/
+- **Yfinance documentation**: https://pypi.org/project/yfinance/
+- **oandapyV20 REST-V20 API wrapper documentation**: https://oanda-api-v20.readthedocs.io/en/latest/
+
