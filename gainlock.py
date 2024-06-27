@@ -1,10 +1,9 @@
-# GainLock trading bot
+#################### If you would like to read the documentations behind the libraries and APIs check the Readme file! ####################
 
-# If you have a Robinhood account you can use 'robin-stocks' package 
-# to interact with the Robinhood API
 
-# If you would like to read more about the documentation behind this API here's the link!
-# https://pypi.org/project/robin-stocks/
+# GAINLOCK TRADING BOT #
+
+# If you have a Robinhood account you can use 'robin-stocks' package to interact with the Robinhood API
 
 # required imports
 import pandas as pd 

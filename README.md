@@ -9,3 +9,6 @@ GainLock is an algorithmic trading bot designed to automate trading decisions ba
 - **Real-Time Data Analysis**: Utilizes real-time market data to make informed trading decisions.
 - **Risk Management**: Includes built-in risk management protocols to mitigate potential losses.
 - **Logging and Reporting**: Keeps detailed logs of trading activities and performance metrics.
+
+## Documentation links
+- **Robin-stocks API Library**: https://pypi.org/project/robin-stocks/
