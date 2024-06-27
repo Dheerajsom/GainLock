@@ -117,14 +117,14 @@ def execute_trades():
          
     # Stop Loss Take Profit
     SLTPRatio = 2
-    previous_candle_price = abs(stockdf['High'].iloc[-2] - stockdf['Low'].iloc[-2])
+    previous_candle_range = abs(stockdf['High'].iloc[-2] - stockdf['Low'].iloc[-2])
     
-    SLBuy = float(str(candle.bid.o)) - previous_candle_price
-    SLSell = float(str(candle.bid.o)) + previous_candle_price
+    SLBuy = float(str(candle.bid.o)) - previous_candle_range
+    SLSell = float(str(candle.bid.o)) + previous_candle_range
 
     # If you reach your Take Profit number decide whether to buy more or sell 
-    TPBuy = float(str(candle.bid.o)) + previous_candle_price * SLTPRatio
-    TPSell = float(str(candle.bid.o)) - previous_candle_price * SLTPRatio
+    TPBuy = float(str(candle.bid.o)) + previous_candle_range * SLTPRatio
+    TPSell = float(str(candle.bid.o)) - previous_candle_range * SLTPRatio
     
     print(stockdf.iloc[:-1,:])
     print(TPBuy, "  ", SLBuy, "  ", TPSell, "  ", SLSell)
