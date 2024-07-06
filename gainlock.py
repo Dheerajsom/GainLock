@@ -13,7 +13,7 @@ import time
 import yfinance as yf  
 
 # Robinhood imports
-import robin_stocks as r 
+import robin_stocks.robinhood as rh
 
 #---- 1. Login to your Robinhood account ----# 
 username = 'johncena@gmail.com'
